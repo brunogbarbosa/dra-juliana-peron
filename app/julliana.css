@@ -1,0 +1,45 @@
+/* Juliana Peron — grafite, marfim quente e detalhes de vinho. */
+.essence-editorial { background: #f4eee7; }
+.essence-values { background: #eadfd5; }
+.essence-value { background: #faf7f2d9; border-color: #ffffffa8; }
+.essence-value-icon { background: #dfc7b2; color: #281d1e; }
+.essence-editorial-description, .essence-value p { color: #6d625d; }
+.gallery-chapter, .closing-chapter, .footer, .result-dialog { background: #20191a; }
+.gallery-photo, .comparison { background: #34292a; }
+.gallery-heading p, .footer-main > div { color: #e0d1c7; }
+.ritual-chapter { background: #f4eee7; }
+.social-chapter { background: #e8dcd0; }
+.closing-chapter { background: radial-gradient(circle at 80% 20%, #513736, #20191a 58%); }
+.menu-dialog { background: #f4eee7; }
+.viewer-note { color: #d9b99d; }
+
+/* Keep her portrait luminous while the left side supports the editorial text. */
+.campaign { background: #20191a; }
+.campaign::before {
+  background: linear-gradient(90deg, #171313 0%, #1b1515f2 27%, #201819c9 42%, #21181945 62%, transparent 79%),
+    linear-gradient(180deg, #1713133b, transparent 37%, #17131370 100%);
+}
+.campaign::after { background: none; }
+.campaign-original { object-position: center 34%; filter: saturate(.98) contrast(1.01) brightness(1.04); }
+.campaign h1 { font-size: clamp(78px, 7.15vw, 137px); }
+.campaign-copy { width: min(61%, 890px); }
+.campaign-title-line:nth-child(3) { color: #e8c5aa; }
+.campaign-cta { background: #e5c2a5; border-color: #e5c2a5; }
+.campaign-cta:hover, .campaign-cta:focus-visible { background: #f5d9be; }
+.campaign-topline, .campaign-kicker, .campaign-metrics, .campaign-signature { color: #ead0bb; }
+.campaign-editorial em { color: #f1cdb0; }
+
+@media (max-width: 1100px) {
+  .campaign h1 { font-size: clamp(66px, 7.6vw, 100px); }
+}
+@media (max-width: 700px) {
+  .campaign::before { background: linear-gradient(180deg, #1813129e 0%, #18131210 17%, #18131212 36%, #181312d7 60%, #181312 76%, #181312 100%); }
+  .campaign::after { background: linear-gradient(90deg, #19141469, transparent 40%); }
+  .campaign-original { object-position: center 23%; filter: saturate(.97) contrast(1.01) brightness(1.02); }
+  .campaign h1 { font-size: clamp(55px, 13.1vw, 91px); }
+  .gallery-heading p { max-width: 30rem; }
+  .gallery-photo { aspect-ratio: .88; }
+}
+@media (max-width: 390px) {
+  .campaign h1 { font-size: 12.7vw; }
+}
