@@ -80,7 +80,7 @@ export function AuthorChapter() {
           <span className={styles.titleMask}><span data-author-motion="title">preservar</span></span>
           <span className={styles.titleMask}><em data-author-motion="title">sua essência.</em></span>
         </h2>
-        <p className={styles.subcopy} data-author-motion="subcopy">Cada detalhe começa<br />na escuta.</p>
+        <p className={styles.subcopy} data-author-motion="subcopy">Cada detalhe começa na escuta.</p>
       </div>
 
       <figure className={styles.photo} data-author-motion="photo">

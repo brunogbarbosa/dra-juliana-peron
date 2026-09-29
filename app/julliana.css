@@ -16,11 +16,11 @@
 /* Keep her portrait luminous while the left side supports the editorial text. */
 .campaign { background: #20191a; }
 .campaign::before {
-  background: linear-gradient(90deg, #171313 0%, #1b1515f2 27%, #201819c9 42%, #21181945 62%, transparent 79%),
+  background: linear-gradient(90deg, #171313 0%, #1b1515f2 26%, #201819d1 39%, #21181945 52%, transparent 67%),
     linear-gradient(180deg, #1713133b, transparent 37%, #17131370 100%);
 }
 .campaign::after { background: none; }
-.campaign-original { object-position: center 34%; filter: saturate(.98) contrast(1.01) brightness(1.04); }
+.campaign-original { object-position: center 16%; filter: saturate(.98) contrast(1.01) brightness(1.04); }
 .campaign h1 { font-size: clamp(78px, 7.15vw, 137px); }
 .campaign-copy { width: min(61%, 890px); }
 .campaign-title-line:nth-child(3) { color: #e8c5aa; }
@@ -28,6 +28,14 @@
 .campaign-cta:hover, .campaign-cta:focus-visible { background: #f5d9be; }
 .campaign-topline, .campaign-kicker, .campaign-metrics, .campaign-signature { color: #ead0bb; }
 .campaign-editorial em { color: #f1cdb0; }
+
+@media (min-width: 701px) {
+  .campaign-portrait { left: 26%; }
+  .campaign-silhouette {
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 34%, #000 100%);
+    mask-image: linear-gradient(90deg, transparent 0%, #000 34%, #000 100%);
+  }
+}
 
 @media (max-width: 1100px) {
   .campaign h1 { font-size: clamp(66px, 7.6vw, 100px); }
